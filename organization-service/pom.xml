@@ -70,6 +70,18 @@
             <version>5.6.0</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.graftcode</groupId>
+            <artifactId>hypertube-java-sdk</artifactId>
+            <version>3.1.8</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-nop</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
 
     <build>
